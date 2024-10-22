@@ -1,4 +1,4 @@
-package Oct.ex_02102024;
+package Oct.Ex1_Hello_World;
 
 public class Lab001 {
     public static void main(String[] args) {

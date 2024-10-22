@@ -1,4 +1,4 @@
-package Oct.ex_03102024;
+package Oct.Ex2_Table_Calculator;
 
 public class Lab002 {
     public static void main(String[] args) {
