@@ -1,9 +1,7 @@
 package Oct.Ex7_Operators;
 
 public class Lab009 {
-    public static void main(String[] args) {
-        System.out.println("You answer is " + 10%12);
-
+    public static void main(String[] args) 
         // Ternary operator
         int a = 20;
         int b = 300;
