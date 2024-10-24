@@ -1,4 +1,4 @@
-package Oct.Tasks;
+package Oct.Exercise;
 
 public class Exercise1 {
     public static void main(String[] args) {
