@@ -2,7 +2,7 @@ package Oct.Ex7_Operators;
 
 public class Task11_Oct {
     public static void main(String[] args) {
-        // 1. Arithmetic Operators
+        // 1.Arithmetic Operators
         int a = 90;
         int b = 20;
 
@@ -18,7 +18,7 @@ public class Task11_Oct {
         System.out.println(mul);
         System.out.println(modulo);
 
-        // 2. Relational (Comparison) Operators
+        // 2.Relational (Comparison) Operators
 
         boolean isEqual = (5 == 3); // isEqual = false
         boolean isNotEqual = (5 != 3); // isNotEqual = true
@@ -27,13 +27,13 @@ public class Task11_Oct {
         boolean isGreaterOrEqual = (5 >= 5); // isGreaterOrEqual = true
         boolean isLesserOrEqual = (5 <= 3); // isLesserOrEqual = false
 
-        // 3. Logical Operators
+        // 3.Logical Operators
 
         boolean result1 = (5 > 3) && (3 > 1); // result1 = true
         boolean result2 = (5 > 3) || (3 > 1); // result2 = true
         boolean result3 = !(5 > 3); // result3 = false
 
-        // 4. Conditional (Ternary) Operator
+        // 4.Conditional (Ternary) Operator
 
         int A = 20;
         int B = 300;
