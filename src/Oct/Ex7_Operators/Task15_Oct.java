@@ -6,7 +6,7 @@ public class Task15_Oct {
         int b = 300;
         int c = 800;
 
-        String result = (a > b && a > c) ? "A is the greatest" : (b > a && b > c) ? "B is the greatest":
+        String result = (a > b && a > c) ? "A is the greatest" : (b > c) ? "B is the greatest":
                 "C is the greatest" ;
 
         System.out.println(result);
