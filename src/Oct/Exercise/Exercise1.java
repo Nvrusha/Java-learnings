@@ -5,6 +5,7 @@ public class Exercise1 {
 
      // write a program to calculate percentage of a given student in CBSE board exam. His marks for
      // 5 subjects must be taken as input from keyboard
+        System.out.println("Hello world");
 
 
     }

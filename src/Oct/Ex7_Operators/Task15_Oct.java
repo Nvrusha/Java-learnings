@@ -8,7 +8,6 @@ public class Task15_Oct {
 
         String result = (a > b && a > c) ? "A is the greatest" : (b > c) ? "B is the greatest":
                 "C is the greatest" ;
-
         System.out.println(result);
     }
 }
