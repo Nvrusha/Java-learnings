@@ -16,11 +16,14 @@ public class Lab011_Scanner_class {
         int age = scanner.nextInt();
 
         // Taking a double input
-        System.out.println("Enter your height: ");
-        double height = scanner.nextDouble();
+        System.out.println("Enter your salary: ");
+        double salary = scanner.nextDouble();
 
         System.out.println("Your Name is: " + name);
         System.out.println("Your age is: " + age);
-        System.out.println("Your height is: " + height);
+        System.out.println("Your salary is: " + salary);
+
+        // Close the scanner to prevent memory leaks
+        scanner.close();
     }
 }
