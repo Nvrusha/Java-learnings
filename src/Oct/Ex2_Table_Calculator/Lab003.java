@@ -2,6 +2,7 @@ package Oct.Ex2_Table_Calculator;
 
 public class Lab003 {
     public static void main(String[] args) {
+        // Simple Calculator
         int a=30, b=20;
         int Addition = a + b;
         int Subtraction = a - b;

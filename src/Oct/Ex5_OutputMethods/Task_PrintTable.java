@@ -2,6 +2,8 @@ package Oct.Ex5_OutputMethods;
 
 public class Task_PrintTable {
     public static void main(String[] args) {
+
+        // print table using printf();
         int num = 10;
         System.out.printf("%d * %d = %d", num, 1, num);
         System.out.println();

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Lab011_Scanner_class {
     public static void main(String[] args) {
+
         // creates a Scanner object to read input from the console.
         Scanner scanner = new Scanner(System.in);
 
