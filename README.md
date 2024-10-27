@@ -6,7 +6,8 @@ This repository showcases my progress as I learn the fundamentals of Java, from 
 ## 📁 Repository Structure
 Here's a breakdown of the topics covered so far:
 
-🔤 ** Basics **: Getting started with variables, data types, operators, and control flow (e.g., if-else, switch, loops).
+### 🔤 Basics: 
+    Getting started with variables, data types, operators, and control flow (e.g., if-else, switch, loops).
 📦 Object-Oriented Programming (OOP): Diving into classes, objects, inheritance, polymorphism, and encapsulation.
 ⚙️ Advanced Topics: Exploring file handling, exception management, data structures, algorithms, and more.
 💻 Practice Projects: Small hands-on projects to apply what I’ve learned in real scenarios.
