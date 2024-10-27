@@ -6,7 +6,8 @@ This repository showcases my progress as I learn the fundamentals of Java, from 
 ## 📁 Repository Structure
 Here's a breakdown of the topics covered so far:
 
-### 🔤 Basics: Getting started with variables, data types, operators, and control flow (e.g., if-else, switch, loops).
+### 🔤 Basics:
+  Getting started with variables, data types, operators, and control flow (e.g., if-else, switch, loops).
 
 ### 📦 Object-Oriented Programming (OOP): Diving into classes, objects, inheritance, polymorphism, and encapsulation.
 
@@ -17,19 +18,19 @@ Here's a breakdown of the topics covered so far:
 ## 🎯 Purpose
 This repository serves as:
 
-1.A learning log of my Java programming journey.
+1. A learning log of my Java programming journey.
 
-2.A reference for anyone also learning Java, with various examples and exercises.
+2. A reference for anyone also learning Java, with various examples and exercises.
 
-3.A way to document my progress and gradually build a solid foundation.
+3. A way to document my progress and gradually build a solid foundation.
 
 ## 📌 How to Use This Repo
 Feel free to:
 
-1.Explore and browse different topics.
+1. Explore and browse different topics.
 
-2.Fork the repository if you'd like to experiment or add to the code.
+2. Fork the repository if you'd like to experiment or add to the code.
 
-3.Raise issues or share feedback — learning together is better! 😊
+3. Raise issues or share feedback — learning together is better! 😊
 
 ## Happy coding! 🚀
