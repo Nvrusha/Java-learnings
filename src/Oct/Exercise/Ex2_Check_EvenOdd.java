@@ -2,7 +2,7 @@ package Oct.Exercise;
 
 import java.util.Scanner;
 
-public class Exercise2 {
+public class Ex2_Check_EvenOdd {
     public static void main(String[] args) {
         // Detect whether the number entered by the user is even or odd
 

@@ -2,7 +2,7 @@ package Oct.Exercise;
 
 import java.util.Scanner;
 
-public class Exercise1 {
+public class Ex1_Percentage_Calc {
     public static void main(String[] args) {
 
      // write a program to calculate percentage of a given student in CBSE board exam. His marks for
