@@ -16,13 +16,13 @@ public class Ex3_Triangle_classifier {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter side1:");
-        int side1 = scanner.nextInt();
+        double side1 = scanner.nextDouble();
 
         System.out.println("Enter side2:");
-        int side2 = scanner.nextInt();
+        double side2 = scanner.nextDouble();
 
         System.out.println("Enter side3:");
-        int side3 = scanner.nextInt();
+        double side3 = scanner.nextDouble();
 
         // Input validation for positive sides
         if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
