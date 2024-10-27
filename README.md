@@ -18,9 +18,9 @@ Getting started with variables, data types, operators, and control flow (e.g., i
 ## 🎯 Purpose
 This repository serves as:
 
-A learning log of my Java programming journey.
-A reference for anyone also learning Java, with various examples and exercises.
-A way to document my progress and gradually build a solid foundation.
+1.A learning log of my Java programming journey.
+2.A reference for anyone also learning Java, with various examples and exercises.
+3.A way to document my progress and gradually build a solid foundation.
 
 ## 📌 How to Use This Repo
 Feel free to:
