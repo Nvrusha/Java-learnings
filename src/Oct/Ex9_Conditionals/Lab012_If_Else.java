@@ -17,5 +17,7 @@ public class Lab012_If_Else {
             System.out.println("You can't drive!");
         }
 
+        scanner.close();
+
     }
 }
