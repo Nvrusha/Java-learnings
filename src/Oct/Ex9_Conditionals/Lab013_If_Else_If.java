@@ -15,21 +15,23 @@ public class Lab013_If_Else_If {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter your marks to know your grade:");
-        int Marks = scanner.nextInt();
+        int marks = scanner.nextInt();
 
-        if (Marks >= 90 && Marks <= 100) {
-            System.out.println("A");
-        } else if (Marks >= 80 && Marks < 90) {
-            System.out.println("B");
-        }
-        else if (Marks >= 70 && Marks < 80) {
-            System.out.println("C");
-        }
-        else if (Marks >= 60 && Marks < 70) {
-            System.out.println("D");
-        }
-        else {
-            System.out.println("F");
+        // Validate the input
+        if (marks < 0 || marks > 100) {
+            System.out.println("Invalid input! Please enter a score between 0 and 100.");
+        } else {
+            if (marks >= 90) {
+                System.out.println("A");
+            } else if (marks >= 80) {
+                System.out.println("B");
+            } else if (marks >= 70) {
+                System.out.println("C");
+            } else if (marks >= 60) {
+                System.out.println("D");
+            } else {
+                System.out.println("F");
+            }
         }
         scanner.close();
     }
