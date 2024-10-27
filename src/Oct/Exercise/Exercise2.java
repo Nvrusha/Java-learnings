@@ -18,5 +18,6 @@ public class Exercise2 {
             System.out.println("Given number is odd!");
         }
 
+        scanner.close();
     }
 }
