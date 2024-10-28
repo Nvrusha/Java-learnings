@@ -1,4 +1,4 @@
-package Oct.Exercise;
+package Oct.Practice;
 
 import java.util.Scanner;
 
