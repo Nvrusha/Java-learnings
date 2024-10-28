@@ -1,4 +1,4 @@
-package Oct.Ex5_OutputMethods;
+package Oct.Ex5_Output_Methods;
 
 public class Task_PrintTable {
     public static void main(String[] args) {
