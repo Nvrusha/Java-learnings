@@ -1,6 +1,6 @@
 package Oct.Ex10_Loops;
 
-public class Lab017_Practice {
+public class Lab017_ForLoop {
     public static void main(String[] args) {
         // 1. Int data type
         for (int i = 0; i < 5; i++) {
@@ -16,6 +16,6 @@ public class Lab017_Practice {
         for (char c = 'a'; c <= 'z'; c++) {
             System.out.println("Character: " + c);
         }
-        }
     }
+}
 

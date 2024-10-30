@@ -10,7 +10,7 @@ public class Lab016_Notes {
 
         //Syntax:
         //for (initialization; condition; increment/decrement) {
-           // Code to be executed
+        // Code to be executed
         //}
         //Example:
         for (int i = 0; i < 5; i++) {
