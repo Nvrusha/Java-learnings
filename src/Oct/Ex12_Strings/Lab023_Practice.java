@@ -29,5 +29,16 @@ public class Lab023_Practice {
         //5. .concat()
         System.out.println(string.concat(" Nivangune"));
 
+        //6. .indexOf()
+        System.out.println(string.indexOf("r", 3));
+
+        //7. .replace()
+        String text = "apple111 apple222 apple333";
+        System.out.println(text.replace("p", "e"));
+
+        //8. .replaceAll()
+        String text1 = "apple1 apple2 apple3";
+        System.out.println(text.replaceAll("\\d", "e"));
+
     }
 }
