@@ -9,5 +9,25 @@ public class Lab023_Practice {
         System.out.println(str1 == str2);  // true, both refer to the same object in the pool
         System.out.println(str1 == str3);  // false, str3 is a new object in the heap
         System.out.println(str1.equals(str3));  // true, because the content is the same
+
+        // String methods
+
+        String string = "Vrushali";
+
+        //1. .length()
+        System.out.println(string.length());
+
+        //2. .toLowerCase()
+        System.out.println(string.toLowerCase());
+
+        //3. .toUpperCase()
+        System.out.println(string.toUpperCase());
+
+        //4. .substring()
+        System.out.println(string.substring(3 , 5));
+
+        //5. .concat()
+        System.out.println(string.concat(" Nivangune"));
+
     }
 }
