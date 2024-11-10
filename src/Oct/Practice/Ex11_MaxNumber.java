@@ -4,15 +4,19 @@ public class Ex11_MaxNumber {
     public static void main(String[] args) {
         // Find maximum number in an array
 
-        int [] array = {1,7,4,90,23,54,23,89,11};
+        int [] array = {130,7,4,90,23,54,23,89,110};
 
-        int max = 0;
+        // Initialize max to the first element of the array
+        int max = array[0];
 
-        for (int i = 0; i < array.length-1; i++ ){
-            if(array[i] > array[i+1]){
-                max = array[i];
+        // Loop through the array to find the maximum
+        for (int i = 0; i < array.length; i++ ){
+            if(array[i] > max){
+                max = array[i];  // Update max if current element is greater
             }
         }
+
+        // Print the maximum value found
         System.out.println(max);
     }
 }
