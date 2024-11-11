@@ -35,5 +35,14 @@ public class Lab026_Practice {
         System.out.println("The entered array is: " + Arrays.toString(array1));
         scanner.close();
 
+
+        // ForEach loop
+
+        String [] fruits = {"Apple", "Mango", "Banana", "Watermelon"};
+
+        for (String fruit_name : fruits){
+            System.out.println(fruit_name);
+        }
+
     }
 }
