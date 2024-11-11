@@ -25,6 +25,23 @@ public class Lab027_2D_Array {
         // Print the 2D array using Arrays.deepToString to display it in a readable format
         System.out.println(Arrays.deepToString(array));
 
+        // Declare and initialize a 2D array with 2 rows and 3 columns
+        int [][] array1 = new int[2][3];
+
+        // Assign values to the first row
+        array1[0][0] = 1;
+        array1[0][1] = 2;
+        array1[0][2] = 3;
+
+        // Assign values to the second row
+        array1[1][0] = 4;
+        array1[1][1] = 5;
+        array1[1][2] = 6;
+
+        // Print the 2D array using Arrays.deepToString to display it in a readable format
+        System.out.println(Arrays.deepToString(array1));
+
+
 
     }
 }
