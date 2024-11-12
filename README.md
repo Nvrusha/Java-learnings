@@ -1,7 +1,7 @@
-# 🌟 Java Learning Journey
-Welcome to my Java Learning Repository! 👩‍💻📚  
+# 🌟 Oct Learning Journey
+Welcome to my Oct Learning Repository! 👩‍💻📚  
 
-This repository showcases my progress as I learn the fundamentals of Java, from the basics to advanced topics. Here, you’ll find a collection of exercises, code snippets, and small projects that help me solidify my Java knowledge.
+This repository showcases my progress as I learn the fundamentals of Oct, from the basics to advanced topics. Here, you’ll find a collection of exercises, code snippets, and small projects that help me solidify my Oct knowledge.
 
 ## 📁 Repository Structure
 Here's a breakdown of the topics covered so far:
@@ -21,9 +21,9 @@ Small hands-on projects to apply what I’ve learned in real scenarios.
 ## 🎯 Purpose
 This repository serves as:
 
-1. A learning log of my Java programming journey.
+1. A learning log of my Oct programming journey.
 
-2. A reference for anyone also learning Java, with various examples and exercises.
+2. A reference for anyone also learning Oct, with various examples and exercises.
 
 3. A way to document my progress and gradually build a solid foundation.
 
