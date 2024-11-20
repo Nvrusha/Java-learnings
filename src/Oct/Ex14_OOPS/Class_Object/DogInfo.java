@@ -1,4 +1,4 @@
-package Oct.Ex14_OOPS;
+package Oct.Ex14_OOPS.Class_Object;
 
 public class DogInfo {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Oct.Ex14_OOPS;
+package Oct.Ex14_OOPS.Class_Object;
 
 public class Lab029_Class_Object_Notes {
     public static void main(String[] args) {
