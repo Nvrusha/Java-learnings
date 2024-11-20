@@ -10,15 +10,15 @@ public class Lab033_Parameterized_Constructor {
 
         // Prompt user to enter the book name
         System.out.println("Enter book name: ");
-        String bookName = scanner.next();
+        String bookName = scanner.nextLine();
 
         // Prompt user to enter the author name
         System.out.println("Enter author name: ");
-        String authorName = scanner.next();
+        String authorName = scanner.nextLine();
 
         // Prompt user to enter the book price
         System.out.println("Enter book price: ");
-        int price = scanner.nextInt();
+        double price = scanner.nextDouble();
 
         // Creating an object of the Books class using the parameterized constructor
         Books book1 = new Books(bookName, authorName, price);
@@ -33,10 +33,10 @@ class Books{
     // Attributes of the Books class
     String bookName;    // Stores the name of the book
     String authorName;  // Stores the name of the author
-    int price;          // Stores the price of the book
+    double price;       // Stores the price of the book
 
     // Parameterized constructor to initialize the attributes
-    Books(String name, String author, int price) {
+    Books(String name, String author, double price) {
         this.bookName = name;          // Initializing bookName with the constructor's name parameter
         this.authorName = author;      // Initializing authorName with the constructor's author parameter
         this.price = price;            // Initializing price with the constructor's price parameter
