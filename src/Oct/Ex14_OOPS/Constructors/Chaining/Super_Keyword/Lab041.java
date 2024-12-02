@@ -1,4 +1,4 @@
-package Oct.Ex14_OOPS.Super_Keyword;
+package Oct.Ex14_OOPS.Constructors.Chaining.Super_Keyword;
 
 public class Lab041 {
     public static void main(String[] args) {
