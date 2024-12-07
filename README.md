@@ -1,4 +1,4 @@
-# 🌟 Oct Learning Journey
+# 🌟 Java Learning Journey
 Welcome to my Oct Learning Repository! 👩‍💻📚  
 
 This repository showcases my progress as I learn the fundamentals of Oct, from the basics to advanced topics. Here, you’ll find a collection of exercises, code snippets, and small projects that help me solidify my Oct knowledge.
