@@ -38,5 +38,41 @@ public class Lab005 {
         interface Animal {
             void sound();  // abstract method
         }
+
+        // 5. Enums
+        // Loop through all enum values
+        for (Day day : Day.values()) {
+            System.out.println(day + ": " + day.getDescription() +
+                    " (Weekend: " + day.isWeekend() + ")");
+        }
+    }
+}
+
+// Enums
+enum Day {
+    MONDAY("Start of the work week"),
+    TUESDAY("Second day"),
+    WEDNESDAY("Midweek"),
+    THURSDAY("Almost Friday"),
+    FRIDAY("Weekend starts soon"),
+    SATURDAY("Relax day"),
+    SUNDAY("Family day");
+
+    // Field
+    private final String description;
+
+    // Constructor
+    Day(String description) {
+        this.description = description;
+    }
+
+    // Getter Method
+    public String getDescription() {
+        return description;
+    }
+
+    // Additional Method
+    public boolean isWeekend() {
+        return this == SATURDAY || this == SUNDAY;
     }
 }

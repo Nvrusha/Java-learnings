@@ -41,3 +41,4 @@ class Pen{
         System.out.println(this.color);
     }
 }
+
