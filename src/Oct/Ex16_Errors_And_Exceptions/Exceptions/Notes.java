@@ -1,6 +1,6 @@
 package Oct.Ex16_Errors_And_Exceptions.Exceptions;
 
-public class Exceptions_Notes {
+public class Notes {
     public static void main(String[] args) {
         /*
          ==============================
