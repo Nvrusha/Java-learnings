@@ -1,6 +1,6 @@
 package Oct.Ex16_Errors_And_Exceptions.Exceptions.HandlingException;
 
-public class MultipleExceptions {
+public class Nested_Try_Blocks {
     public static void main(String[] args) {
 
         //Handling Multiple Exceptions with Nested Try Blocks
