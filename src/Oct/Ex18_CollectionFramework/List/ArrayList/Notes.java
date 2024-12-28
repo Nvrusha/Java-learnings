@@ -1,4 +1,4 @@
-package Oct.Ex18_CollectionFramework.List;
+package Oct.Ex18_CollectionFramework.List.ArrayList;
 
 public class Notes {
     public static void main(String[] args) {
