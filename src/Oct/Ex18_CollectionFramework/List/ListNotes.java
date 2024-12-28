@@ -1,6 +1,6 @@
-package Oct.Ex18_CollectionFramework.List.ArrayList;
+package Oct.Ex18_CollectionFramework.List;
 
-public class Notes {
+public class ListNotes {
     public static void main(String[] args) {
         /*
          What is a List?

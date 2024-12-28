@@ -33,10 +33,16 @@ public class Example {
         // Find the index of a specific element
         System.out.println("Index of the element '8': " + studentsList.indexOf(8));
 
-        // Iterate through the list and print each element
-        System.out.println("Iterating through the list:");
+        // Iterate through the list using for each loop and print each element
+        System.out.println("Iterating through the list by for each loop:");
         for (Object student : studentsList) {
             System.out.println(student);
+        }
+
+        // Iterate through the list by for loop and print each element
+        System.out.println("Iterating through the list by for loop:");
+        for (int i = 0; i < studentsList.size(); i++) {
+            System.out.println(studentsList.get(i));
         }
 
         // Remove an element by value
