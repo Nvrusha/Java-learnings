@@ -1,6 +1,7 @@
 package Oct.Ex18_CollectionFramework.List.ArrayList;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Example {
     public static void main(String[] args) {
@@ -44,6 +45,14 @@ public class Example {
         for (int i = 0; i < studentsList.size(); i++) {
             System.out.println(studentsList.get(i));
         }
+
+        //Iterate through the list by using iterator.
+        System.out.println("Iterating through the list by using Iterator");
+        Iterator iterator = studentsList.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
 
         // Remove an element by value
         studentsList.remove("Sam"); // Removes the first occurrence of "Sam"
