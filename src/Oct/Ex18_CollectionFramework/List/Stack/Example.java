@@ -1,62 +1,33 @@
 package Oct.Ex18_CollectionFramework.List.Stack;
 
+import java.util.Stack;
+
 public class Example {
     public static void main(String[] args) {
 
-        CustomStack stack = new CustomStack(5);
+        // Create a Stack
+        Stack<String> stack = new Stack<>();
 
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
+        // Push elements onto the stack
+        stack.push("Apple");
+        stack.push("Banana");
+        stack.push("Cherry");
+        stack.push("Sugar-apple");
 
-        System.out.println("Top element: " + stack.peek()); // Output: 30
-        System.out.println("Popped element: " + stack.pop()); // Output: 30
-        System.out.println("Is stack empty? " + stack.isEmpty()); // Output: false
+        // Print the stack
+        System.out.println("Stack: " + stack);
 
-    }
-}
+        // Peek the top element
+        System.out.println("Top element: " + stack.peek());
 
-class CustomStack {
-    private int[] stack;
-    private int top;
-    private int capacity;
+        // Pop an element from the stack
+        System.out.println("Popped: " + stack.pop());
 
-    // Constructor
-    public CustomStack(int size) {
-        stack = new int[size];
-        capacity = size;
-        top = -1;
-    }
+        // Print the stack after popping
+        System.out.println("Stack after pop: " + stack);
 
-    // Push operation
-    public void push(int value) {
-        if (top == capacity - 1) {
-            System.out.println("Stack Overflow");
-            return;
-        }
-        stack[++top] = value;
-    }
+        // Check if the stack is empty
+        System.out.println("Is stack empty? " + stack.isEmpty());
 
-    // Pop operation
-    public int pop() {
-        if (top == -1) {
-            System.out.println("Stack Underflow");
-            return -1;
-        }
-        return stack[top--];
-    }
-
-    // Peek operation
-    public int peek() {
-        if (top == -1) {
-            System.out.println("Stack is empty");
-            return -1;
-        }
-        return stack[top];
-    }
-
-    // Check if the stack is empty
-    public boolean isEmpty() {
-        return top == -1;
     }
 }
