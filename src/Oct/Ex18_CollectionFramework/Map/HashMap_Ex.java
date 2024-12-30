@@ -2,7 +2,7 @@ package Oct.Ex18_CollectionFramework.Map;
 
 import java.util.HashMap;
 
-public class HashMap_Example {
+public class HashMap_Ex {
     public static void main(String[] args) {
 
         // Create a HashMap to store student records
@@ -46,8 +46,8 @@ public class HashMap_Example {
 
         // Iterate through the HashMap (keySet() and values() methods)
         System.out.println("\nIterating through student records:");
-        for (Integer id : studentRecords.keySet()) {
-            System.out.println("ID: " + id + ", Name: " + studentRecords.get(id));
+        for (Integer ID : studentRecords.keySet()){
+            System.out.println("ID: " + ID + ", Name: " + studentRecords.get(ID));
         }
 
         // Clear all student records (clear() method)
