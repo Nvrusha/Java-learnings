@@ -1,39 +1,65 @@
-# 🌟 Java Learning Journey
-Welcome to my Oct Learning Repository! 👩‍💻📚  
+# 🌟 Java Learning Journey  
 
-This repository showcases my progress as I learn the fundamentals of Oct, from the basics to advanced topics. Here, you’ll find a collection of exercises, code snippets, and small projects that help me solidify my Oct knowledge.
+Welcome to my **Java Learning Repository**! 👩‍💻📚  
 
-## 📁 Repository Structure
-Here's a breakdown of the topics covered so far:
+This repository showcases my progress as I learn **Java fundamentals** and practice concepts step by step. It contains a wide collection of exercises, topic-wise programs, and interview preparation material.  
 
-### 🔤 Basics:
-Getting started with variables, data types, operators, and control flow (e.g., if-else, switch, loops).
+---
 
-### 📦 Object-Oriented Programming (OOP): 
-Diving into classes, objects, inheritance, polymorphism, and encapsulation.
+## 📁 Repository Structure  
 
-### ⚙️ Advanced Topics: 
-Exploring file handling, exception management, data structures, algorithms, and more.
+Here’s a breakdown of the topics covered so far:  
 
-### 💻 Practice Projects: 
-Small hands-on projects to apply what I’ve learned in real scenarios.
+### 🔤 Basics  
+- Ex1: Hello World  
+- Ex2: System.out.println (SOP)  
+- Ex3: Main Method  
+- Ex4: Variables & Data Types  
+- Ex5: Output Methods  
+- Ex6: Constants & Literals  
+- Ex7: Operators  
+- Ex8: Taking Input  
+- Ex9: Conditionals  
+- Ex10: Loops  
+- Ex11: Functions  
 
-## 🎯 Purpose
-This repository serves as:
+### 🔡 Strings & Arrays  
+- Ex12: Strings  
+- Ex13: Arrays  
 
-1. A learning log of my Oct programming journey.
+### 📦 Object-Oriented Programming (OOP)  
+- Ex14: OOPS Concepts (Classes, Objects, Inheritance, Polymorphism, Encapsulation, Abstraction)  
+- Ex15: Wrapper Classes  
 
-2. A reference for anyone also learning Oct, with various examples and exercises.
+### ⚠️ Error Handling & Advanced Java  
+- Ex16: Errors and Exceptions  
+- Ex17: Generics  
+- Ex18: Collection Framework  
 
-3. A way to document my progress and gradually build a solid foundation.
+### 💻 Practice Zone  
+- **Practice/** → contains mixed problems and extra exercises  
 
-## 📌 How to Use This Repo
-Feel free to:
+---
 
-1. Explore and browse different topics.
+## 📘 Interview Preparation  
 
-2. Fork the repository if you'd like to experiment or add to the code.
+I have also added a **Word document** that contains **topic-wise Java interview questions and answers**, covering:  
+- Core Java (Basics, OOP, Strings, Arrays, Collections, etc.)  
+- Exception Handling  
+- Wrapper Classes & Generics  
+- Java-specific interview problem-solving questions  
 
-3. Raise issues or share feedback — learning together is better! 😊
+This document is a helpful reference for **SDET/QA interviews**.  
 
-## Happy coding! 🚀
+---
+
+## 🎯 Purpose  
+
+This repository serves as:  
+1. A **learning log** of my Java journey.  
+2. A **quick reference** for interview preparation.  
+3. A **knowledge base** with code examples and practice problems.  
+
+---
+
+## 🚀 Happy Coding!  
