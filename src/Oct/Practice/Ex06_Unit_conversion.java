@@ -2,7 +2,7 @@ package Oct.Practice;
 
 import java.util.Scanner;
 
-public class Ex6_Unit_conversion {
+public class Ex06_Unit_conversion {
     public static void main(String[] args) {
         //Write a program that converts between different units (e.g., kilometers to miles,
         //Celsius to Fahrenheit) based on user selection using a switch statement.

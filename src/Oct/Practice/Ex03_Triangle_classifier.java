@@ -2,7 +2,7 @@ package Oct.Practice;
 
 import java.util.Scanner;
 
-public class Ex3_Triangle_classifier {
+public class Ex03_Triangle_classifier {
     public static void main(String[] args) {
         //Triangle Classifier:
 

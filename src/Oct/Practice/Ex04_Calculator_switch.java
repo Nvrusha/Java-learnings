@@ -2,7 +2,7 @@ package Oct.Practice;
 
 import java.util.Scanner;
 
-public class Ex4_Calculator_switch {
+public class Ex04_Calculator_switch {
     public static void main(String[] args) {
 
         //Create a simple calculator that performs addition, subtraction, multiplication,

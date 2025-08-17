@@ -2,7 +2,7 @@ package Oct.Practice;
 
 import java.util.Scanner;
 
-public class Ex5_MonthOfTheYear_Calc {
+public class Ex05_MonthOfTheYear_Calc {
     public static void main(String[] args) {
         //Write a program that takes an integer input (1-12) and prints the name of the
         //corresponding month using a switch statement.

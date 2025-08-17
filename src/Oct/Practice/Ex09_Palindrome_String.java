@@ -1,6 +1,6 @@
 package Oct.Practice;
 
-public class Ex9_Palindrome_String {
+public class Ex09_Palindrome_String {
     public static void main(String[] args) {
         //Palindrome of String
 

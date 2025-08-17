@@ -1,6 +1,6 @@
 package Oct.Practice;
 
-public class Ex8_Count_VowelsConsonants {
+public class Ex08_Count_VowelsConsonants {
     public static void main(String[] args) {
         //Count vowels and consonants in a String.
 
