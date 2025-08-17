@@ -1,4 +1,4 @@
-package Oct.Ex10_Loops;
+package Oct.Chapter10_Loops;
 
 public class Lab019_DoWhileLoop {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Oct.Ex10_Loops;
+package Oct.Chapter10_Loops;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Oct.Ex2_SOP;
+package Oct.Chapter02_SOP;
 
 public class Lab003 {
     public static void main(String[] args) {
