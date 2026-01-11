@@ -1,29 +1,36 @@
 package Oct.Practice;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Ex12_FindDuplicates {
     public static void main(String[] args) {
-        //Write a function to determine if there are any duplicates in an array.
+        // Given array with some duplicate numbers
+        int[] array = {1, 5, 7, 23, 7, 3, 2, 8, 3, 5};
 
-        int [] array = {1,5,7,23,7,3,2,8,3,5};
-        duplicate_count(array);
-    }
+        // List to store unique elements
+        List<Integer> uniqueList = new ArrayList<>();
 
-    static int duplicate_count(int [] array){
+        // Counter to count how many duplicate elements occur
         int countDuplicates = 0;
 
-        // Step 1: Sort the array to bring duplicate elements together
-        Arrays.sort(array);
-        System.out.println(Arrays.toString(array));
+        // Loop through each number in the array
+        for (int num : array) {
 
-        // Step 2: Loop through the sorted array and count consecutive duplicates
-        for (int i = 0; i < array.length-1; i++) {
-            if(array[i+1] == array[i]){     // Check if the current element is the same as the next one
+            // If the number already exists in the list → duplicate found
+            if (uniqueList.contains(num)) {
+
+                // Increase duplicate count
                 countDuplicates++;
+
+            } else {
+                // If number NOT in the list → add it to the list
+                uniqueList.add(num);
             }
         }
-        // Step 3: Return the total count of duplicate occurrences
-        return countDuplicates;
+
+        // Print the number of duplicates found
+        System.out.println("Total duplicates found: " + countDuplicates);
     }
 }

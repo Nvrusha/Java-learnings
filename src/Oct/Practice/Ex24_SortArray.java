@@ -1,11 +1,13 @@
 package Oct.Practice;
 
+import java.util.Arrays;
+
 public class Ex24_SortArray {
     public static void main(String[] args) {
         int[] arr = {50, 10, 30, 20, 40};  // Original array
 
         // Outer loop runs for each element
-        for(int i = 0; i < arr.length - 1; i++) {
+        for(int i = 0; i < arr.length; i++) {
 
             // Inner loop to compare current element with every next element
             for(int j = i + 1; j < arr.length; j++) {
@@ -24,6 +26,7 @@ public class Ex24_SortArray {
         for(int num : arr) {
             System.out.print(num + " ");
 
+            System.out.println(Arrays.toString(arr));
             // Logic:
             // 1️⃣ Use two loops to compare each element with all other elements.
             // 2️⃣ If arr[i] > arr[j] (wrong order), then swap them.

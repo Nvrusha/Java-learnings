@@ -3,7 +3,7 @@ package Oct.Practice;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class RemoveDuplicates_Array {
+public class Ex23_RemoveDuplicates_Array {
     public static void main(String[] args) {
         int[] arr = {10, 20, 20, 30, 10, 40, 30};
 
