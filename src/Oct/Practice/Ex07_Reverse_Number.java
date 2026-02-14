@@ -1,8 +1,69 @@
 package Oct.Practice;
 
+import java.util.Scanner;
+
 public class Ex07_Reverse_Number {
     public static void main(String[] args) {
-        // 1🔹 Reverse the number using a for loop (Input: 123456789 → Output: 987654321)
+
+        // 1🔹 Reverse the number using a while loop (Input: 12345 → Output: 54321)
+
+        // Create Scanner object to read input from console
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask user to enter a number
+        System.out.print("Enter a number: ");
+
+        // Read integer input from user
+        int number = scanner.nextInt();
+
+        // Store original number for display/reference later
+        int originalNumber = number;
+
+        // Variable to store the reversed number
+        // Initialize with 0 because we will build the reversed number step-by-step
+        int reversed = 0;
+
+        /*
+         * Logic Explanation:
+         * We will extract digits one by one from the end of the number.
+         * Example: 15786
+         * Step 1 → Extract 6
+         * Step 2 → Extract 8
+         * Step 3 → Extract 7
+         * Step 4 → Extract 5
+         * Step 5 → Extract 1
+         */
+
+        // Loop runs until number becomes 0
+        while (number != 0) {
+
+            // Extract the last digit using modulus operator
+            // % 10 gives remainder when divided by 10
+            int digit = number % 10;
+
+            /*
+             * Append extracted digit to reversed number
+             * Multiply reversed by 10 to shift digits left
+             * Then add the new digit
+             */
+            reversed = reversed * 10 + digit;
+
+            // Remove last digit from original number
+            // Integer division automatically removes decimal part
+            number = number / 10;
+        }
+
+        // Print original number
+        System.out.println("Original Number: " + originalNumber);
+
+        // Print reversed number
+        System.out.println("Reversed Number: " + reversed);
+
+        // Close scanner to prevent memory leak
+        scanner.close();
+
+
+        // 2🔹 Reverse the number using a for loop (Input: 123456789 → Output: 987654321)
 
 //        int num1 = 123456789;   // Original number
 //        int rev1 = 0;           // Variable to store the reversed number
@@ -28,25 +89,5 @@ public class Ex07_Reverse_Number {
 
 
 
-        // 2🔹 Reverse the number using a while loop (Input: 12345 → Output: 54321)
-
-        int num = 12345;   // Original number to reverse
-        int rev = 0;       // Variable to hold reversed result
-
-        // Loop continues as long as the number is greater than 0
-        while (num > 0) {
-
-            // Step 1: Extract the last digit
-            int lastDigit = num % 10;
-
-            // Step 2: Add the last digit to reversed number after shifting digits left
-            rev = (rev * 10) + lastDigit;
-
-            // Step 3: Remove the last digit from the original number
-            num = num / 10;
-        }
-
-        // Step 4: Print the reversed number
-        System.out.println("Reversed number: " + rev);
     }
 }
