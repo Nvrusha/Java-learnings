@@ -20,7 +20,7 @@ public class Ex20_ReverseWords {
         }
 
         // Convert StringBuilder to String and trim trailing space before printing
-        System.out.println(revStr.toString().trim());
+        System.out.println(revStr);
 
     }
 }
