@@ -4,54 +4,203 @@ public class Map_Notes {
     public static void main(String[] args) {
 
         /*
-         Map in Java: A Map is a collection in Java used to store key-value pairs. Each key is unique,
-         and each key maps to exactly one value.
+===========================================================
+                JAVA MAP – INTERVIEW REVISION NOTES
+===========================================================
 
-         Key Features:
+📌 1) WHAT IS A MAP?
+-----------------------------------------------------------
+Map stores data in KEY → VALUE pairs.
 
-         1. Stores key-value pairs (like a dictionary in Python).
-         2. Keys are unique; duplicate keys overwrite the previous value.
-         3. Allows one null key (HashMap) and multiple null values.
+• Each KEY must be UNIQUE
+• Values can be duplicate
+• Not part of Collection interface (separate hierarchy)
 
-         Common Implementations:
+Example:
+A → 10
+B → 20
+C → 30
 
-         1. **HashMap**:
+Real use: Frequency counting, caching, lookup tables
 
-            - Unordered, fast for add/remove/search.
-            - Allows one null key and multiple null values.
-            - Not thread-safe.
+Interview Definition:
+"Map is a data structure that stores unique keys mapped to values and provides fast retrieval using hashing."
 
-         2. **LinkedHashMap**:
 
-            - Maintains insertion order.
-            - Slightly slower than HashMap.
-            - Allows one null key and multiple null values.
+📌 2) MAP HIERARCHY
+-----------------------------------------------------------
+Map (interface)
+   |
+   |-- HashMap
+   |-- LinkedHashMap
+   |-- TreeMap
+   |-- Hashtable
 
-         3. **TreeMap**:
 
-            - Maintains keys in sorted (natural) order.
-            - Does not allow null keys but allows null values.
-            - Slower than HashMap and LinkedHashMap due to sorting.
+📌 3) DIFFERENCE BETWEEN MAP TYPES
+-----------------------------------------------------------
+HashMap
+- Random order
+- Fastest
+- Allows 1 null key, multiple null values
+- Not thread safe
+- O(1)
 
-         Common Methods:
+LinkedHashMap
+- Maintains insertion order
+- Slightly slower than HashMap
 
-         1. put(key, value): Adds or updates a key-value pair.
-         2. get(key): Retrieves the value for the given key.
-         3. remove(key): Removes the key-value pair.
-         4. containsKey(key): Checks if the key exists.
-         5. containsValue(value): Checks if the value exists.
-         6. size(): Returns the number of key-value pairs.
-         7. keySet(): Returns all the keys.
-         8. values(): Returns all the values.
-         9. entrySet(): Returns a set of all key-value pairs (Map.Entry).
+TreeMap
+- Sorted order (Red-Black Tree)
+- No null key
+- O(log n)
 
-         When to Use:
+Hashtable
+- Thread safe (synchronized)
+- No null key/value
+- Slow → Legacy class
 
-         - Use Map when data needs to be stored as key-value pairs.
-         - Use HashMap for performance (unordered data).
-         - Use LinkedHashMap if insertion order matters.
-         - Use TreeMap if sorted keys are required.
-        */
+
+📌 4) HOW HASHMAP WORKS INTERNALLY
+-----------------------------------------------------------
+1. Key → hashCode()
+2. hashCode → bucket index
+3. Store in bucket
+4. Collision → LinkedList
+5. After Java 8 → Balanced Tree
+
+Important Interview Line:
+"HashMap uses hashing and bucket indexing to achieve constant time complexity."
+
+
+📌 5) IMPORTANT METHODS
+-----------------------------------------------------------
+
+// insert or update
+map.put(key, value);
+
+// get value
+map.get(key);
+
+// check key
+map.containsKey(key);
+
+// remove
+map.remove(key);
+
+// size
+map.size();
+
+// empty check
+map.isEmpty();
+
+// return keys
+map.keySet();
+
+// return values
+map.values();
+
+// best iteration method
+map.entrySet();
+
+// modern frequency method
+map.getOrDefault(key, 0);
+
+// insert only if missing
+map.putIfAbsent(key, value);
+
+// replace value
+map.replace(key, value);
+
+
+📌 6) ITERATION TECHNIQUES
+-----------------------------------------------------------
+
+// BEST METHOD
+for(Map.Entry<K,V> e : map.entrySet())
+
+// Only keys (slower)
+for(K key : map.keySet())
+
+// Java 8
+map.forEach((k,v) -> System.out.println(k + " " + v));
+
+
+Why entrySet is best?
+→ avoids extra lookup (map.get(key))
+
+
+📌 7) TIME COMPLEXITY
+-----------------------------------------------------------
+put()      → O(1)
+get()      → O(1)
+remove()   → O(1)
+TreeMap    → O(log n)
+
+
+📌 8) COMMON INTERVIEW PROGRAMS USING MAP
+-----------------------------------------------------------
+• Character frequency
+• Duplicate characters
+• First non-repeating character
+• Anagram check
+• Counting words
+• Two sum problem
+
+
+📌 9) IMPORTANT INTERVIEW QUESTIONS
+-----------------------------------------------------------
+
+Q: Can HashMap have null key?
+A: Yes, only one null key
+
+Q: Why HashMap faster than TreeMap?
+A: O(1) vs O(log n)
+
+Q: Difference HashMap vs Hashtable?
+A: Hashtable synchronized (thread-safe but slow)
+
+Q: When to use TreeMap?
+A: When sorted order required
+
+Q: Why entrySet faster than keySet?
+A: keySet requires extra lookup map.get(key)
+
+
+📌 10) getOrDefault() (VERY IMPORTANT)
+-----------------------------------------------------------
+Used in frequency problems:
+
+map.put(ch, map.getOrDefault(ch, 0) + 1);
+
+Meaning:
+If key exists → return value
+Else → return default (0)
+
+
+📌 11) SPACE & PERFORMANCE
+-----------------------------------------------------------
+HashMap average performance O(1)
+Worst case O(n) (rare collisions)
+
+
+📌 12) WHEN TO USE WHICH MAP
+-----------------------------------------------------------
+HashMap       → Fast lookup (most cases)
+LinkedHashMap → Maintain insertion order
+TreeMap       → Sorted output
+Hashtable     → Multi-threaded legacy systems
+
+
+📌 FINAL INTERVIEW ONE-LINER
+-----------------------------------------------------------
+"HashMap is preferred for fast lookup, TreeMap for sorting, and LinkedHashMap when order matters."
+
+===========================================================
+END OF MAP REVISION
+===========================================================
+*/
+
 
     }
 }
