@@ -64,7 +64,7 @@ public class Ex19_DuplicateCharacters {
             if(entry.getValue() > 1) {
 
                 // Print duplicate character
-                System.out.print(entry.getKey() + " ");
+                System.out.print(entry.getKey() + " -> " + entry.getValue() + " ");
             }
         }
 
