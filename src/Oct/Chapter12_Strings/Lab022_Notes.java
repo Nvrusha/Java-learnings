@@ -2,169 +2,197 @@ package Oct.Chapter12_Strings;
 
 public class Lab022_Notes {
     public static void main(String[] args) {
-        //Strings in Java are one of the most commonly used data types. Java provides the String
-        //class to handle text data, and strings are treated as objects rather than primitive data types.
-        //Here’s a breakdown of key concepts and functionalities related to strings in Java:
+        /*
+         ===========================================================
+                     JAVA STRING & OBJECT – INTERVIEW NOTES
+         ===========================================================
 
-        //1. String Basics
 
-        //A String in Java is an immutable sequence of characters, meaning once a String object is created,
-        //it cannot be changed.
+         📌 1) WHAT IS A STRING?
+         -----------------------------------------------------------
+         String represents sequence of characters.
 
-        //Declaring a string:
+         • String is a CLASS (not primitive)
+         • Available in java.lang package
+         • Stored in heap memory
+         • Most frequently used object in Java
 
-        //String str = "Hello, World!";
+         Interview Line:
+         "String is an immutable object used to store character data."
 
-        //Alternatively, you can use the new keyword to create a String object explicitly:
 
-        //String str = new String("Hello, World!");
+         📌 2) STRING IMMUTABILITY (MOST IMPORTANT)
+         -----------------------------------------------------------
+         Once created → cannot be changed
 
-        //2. Immutability of Strings
+         Any modification creates NEW object
+         Old object remains unchanged
 
-        //Since strings are immutable, every time you modify a string (e.g., concatenate it), Java creates
-        //a new string object rather than modifying the existing one.
-        //Example of concatenation:
+         WHY IMMUTABLE?
+         • Security (URLs, file paths, DB connections)
+         • Thread safety
+         • String pool reuse
+         • HashMap performance (hashcode caching)
 
-        //String str1 = "Hello";
-        //String str2 = str1 + " World";  // New string is created
+         Interview Question:
+         Why String is immutable in Java?
 
-        //3. String Pool
 
-        //Java has a special memory area called the "String Pool" where string literals are stored.
-        //If you create two strings with the same literal value, Java will point both references to the
-        //same memory location in the pool rather than creating two separate objects.
+         📌 3) STRING CONSTANT POOL (SCP)
+         -----------------------------------------------------------
+         Special memory area inside Heap
 
-        //String str1 = "Hello";
-        //String str2 = "Hello";
-        //System.out.println(str1 == str2);  // true, because they point to the same object in the string
-        //pool
+         String a = "hello";
+         String b = "hello";
+         → Both point to SAME object
 
-        //4. Common String Methods
+         String a = new String("hello");
+         → New object in heap
 
-        //Length: str.length() - Returns the length of the string.
+         Literal → SCP
+         new keyword → Heap
 
-        //Char at: str.charAt(index) - Returns the character at the specified index.
+         Interview Favorite:
+         Difference between literal and new String
 
-        //Substring: str.substring(start, end) - Returns a substring from the start index to the end index.
 
-        //Concatenate: str.concat("text") - Concatenates the specified text to the end of the string.
+         📌 4) == VS equals()
+         -----------------------------------------------------------
+         == compares MEMORY ADDRESS
+         equals() compares VALUE
 
-        //Equals: str.equals(anotherStr) - Checks if two strings have the same value.
+         MOST COMMON INTERVIEW TRAP QUESTION
 
-        //Equals Ignore Case: str.equalsIgnoreCase(anotherStr) - Checks if two strings are equal,
-        //ignoring case.
 
-        //Compare To: str.compareTo(anotherStr) - Compares two strings lexicographically.
+         📌 5) IMPORTANT STRING METHODS
+         -----------------------------------------------------------
+         length()          → number of characters
+         charAt(i)         → char at index
+         substring(a,b)    → b excluded
+         contains()        → check text
+         equalsIgnoreCase()
+         trim()            → removes start/end spaces only
+         replace()
+         split()
+         toCharArray()
+         toUpperCase()/toLowerCase()
 
-        //To Upper Case / To Lower Case: str.toUpperCase() and str.toLowerCase() - Converts all
-        //characters to uppercase or lowercase.
+         Interview:
+         Predict output questions
 
-        //Trim: str.trim() - Removes any leading and trailing whitespace from the string.
 
-        //Replace: str.replace('oldChar', 'newChar') - Replaces all occurrences of a character.
+         📌 6) STRING VS STRINGBUILDER VS STRINGBUFFER
+         -----------------------------------------------------------
+         String
+         • Immutable
+         • Slow when modifying repeatedly
 
-        //Starts With / Ends With: str.startsWith("prefix") and str.endsWith("suffix") - Checks if the
-        //string starts or ends with a specific sequence.
+         StringBuilder
+         • Mutable
+         • Fastest
+         • Not thread safe
 
-        //Contains: str.contains("sequence") - Checks if the string contains a specific sequence of
-        //characters.
+         StringBuffer
+         • Mutable
+         • Thread safe
+         • Slower than StringBuilder
 
-        //5. String Comparison
+         Interview:
+         Which is fastest? → StringBuilder
 
-        //Use equals() to compare the content of strings:
 
-        //String str1 = "hello";
-        //String str2 = "hello";
-        //System.out.println(str1.equals(str2));  // true
+         📌 7) STRING INTERN()
+         -----------------------------------------------------------
+         Moves string to String Constant Pool
+         Used for memory optimization
 
-        //== checks reference equality, not content:
 
-        //String str1 = new String("hello");
-        //String str2 = new String("hello");
-        //System.out.println(str1 == str2);  // false, different references
+         📌 8) HASHCODE CACHING
+         -----------------------------------------------------------
+         String stores hashcode after first calculation
+         Makes HashMap faster
 
-        //6. String Formatting
 
-        //Java provides String.format() to format strings using placeholders:
+         📌 9) COMMON STRING LOGIC QUESTIONS
+         -----------------------------------------------------------
+         • Reverse string
+         • Palindrome
+         • Anagram
+         • Duplicate characters
+         • Frequency counting
+         • First non-repeating character
 
-        //String name = "Alice";
-        //int age = 25;
-        //String formatted = String.format("My name is %s and I am %d years old", name, age);
-        //System.out.println(formatted);  // Output: My name is Alice and I am 25 years old
 
-        //7. StringBuilder and StringBuffer
+         ===========================================================
+                           OBJECT CONCEPTS
+         ===========================================================
 
-        //StringBuilder and StringBuffer are mutable classes for strings.
-        //StringBuilder: Fast and efficient for single-threaded environments. Use when modifying a
-        //string frequently.
-        //StringBuffer: Similar to StringBuilder but thread-safe (synchronized).
-        //Example with StringBuilder:
+         📌 10) WHAT IS OBJECT?
+         -----------------------------------------------------------
+         Instance of a class
 
-        //StringBuilder sb = new StringBuilder("Hello");
-        //sb.append(" World");
-        //System.out.println(sb.toString());  // Output: Hello World
+         Has:
+         • State (variables)
+         • Behavior (methods)
 
-        //8. Converting Other Data Types to Strings
+         Stored in HEAP
+         Reference stored in STACK
 
-        //You can convert other data types to strings in various ways:
-        //Using String.valueOf():
 
-        //int num = 10;
-        //String str = String.valueOf(num);  // "10"
-        //Using Integer.toString(), Double.toString(), etc.
+         📌 11) STACK VS HEAP
+         -----------------------------------------------------------
+         STACK
+         • Stores references & method calls
+         • Faster
+         • LIFO
 
-        //9. Splitting Strings
+         HEAP
+         • Stores objects
+         • Shared across threads
+         • Managed by Garbage Collector
 
-        //Split a string based on a delimiter using str.split(regex):
+         VERY COMMON INTERVIEW QUESTION
 
-        //String data = "apple,orange,banana";
-        //String[] fruits = data.split(",");
 
-        //10. String Interning
+         📌 12) GARBAGE COLLECTION
+         -----------------------------------------------------------
+         Automatic memory cleanup
 
-        //intern() method in Java ensures that strings with the same content share a single reference
-        //in the string pool:
+         Object eligible when:
+         No references pointing to it
 
-        //String str1 = new String("Hello").intern();
-        //String str2 = "Hello";
-        //System.out.println(str1 == str2);  // true, after interning
-        //Example Code Demonstrating Key Methods
-        //Here's a small code example that combines some of these concepts:
+         System.gc() only REQUESTS GC
 
-        //public class StringDemo {
-        //    public static void main(String[] args) {
-        //        String greeting = " Hello, World! ";
-        //        System.out.println("Original: " + greeting);
-        //
-        //        // Trim
-        //        greeting = greeting.trim();
-        //        System.out.println("Trimmed: " + greeting);
-        //
-        //        // Substring
-        //        String sub = greeting.substring(0, 5);
-        //        System.out.println("Substring: " + sub);
-        //
-        //        // Replace
-        //        String replaced = greeting.replace("World", "Java");
-        //        System.out.println("Replaced: " + replaced);
-        //
-        //        // Length
-        //        System.out.println("Length: " + greeting.length());
-        //
-        //        // Compare
-        //        System.out.println("Equals 'Hello, Java!': " + greeting.equals("Hello, Java!"));
-        //
-        //        // Converting to uppercase
-        //        System.out.println("Uppercase: " + greeting.toUpperCase());
-        //
-        //        // StringBuilder example
-        //        StringBuilder sb = new StringBuilder("Learning ");
-        //        sb.append("Java Strings.");
-        //        System.out.println("StringBuilder: " + sb.toString());
-        //    }
-        //}
-        //Understanding how to work with strings effectively is essential in Java, especially since they
-        //are so frequently used in both everyday programming and complex applications. Let me know if
-        //you’d like more details on any specific method or topic!
+
+         📌 13) PASS BY VALUE IN JAVA
+         -----------------------------------------------------------
+         Java is ALWAYS pass by value
+
+         For objects:
+         Copy of reference passed
+         Object data can change
+         Reference cannot change original
+
+
+         📌 14) IMMUTABLE OBJECT ADVANTAGES
+         -----------------------------------------------------------
+         • Thread safe
+         • Secure
+         • Cacheable
+         • Reusable
+
+         Example: String, Integer
+
+
+         📌 FINAL INTERVIEW ONE-LINER
+         -----------------------------------------------------------
+         "String is immutable and stored in the String Constant Pool,
+         objects are stored in heap and referenced from stack,
+         and Java always uses pass-by-value."
+
+         ===========================================================
+         END OF STRING REVISION
+         ===========================================================
+        */
     }
 }
