@@ -1,6 +1,6 @@
 package Oct.Practice;
 
-public class Ex08_Count_VowelsConsonants {
+public class Ex08_Vowels_Consonants {
     public static void main(String[] args) {
         // Step 1: Declare a string to analyze
         String str = "This is a really simple sentence";
