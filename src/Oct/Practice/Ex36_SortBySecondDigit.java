@@ -36,7 +36,7 @@ import java.util.Arrays;
  ============================================================
 */
 
-public class SortBySecondDigit {
+public class Ex36_SortBySecondDigit {
 
     public static void main(String[] args) {
 
